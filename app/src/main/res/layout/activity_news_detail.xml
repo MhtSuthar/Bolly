@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:animateLayoutChanges="true"
     tools:context="com.bolly.gossip.ui.NewsDetailActivity">
 
     <android.support.v7.widget.Toolbar
@@ -27,6 +28,7 @@
             android:id="@+id/progress_bar_side"
             android:theme="@style/LinearProgress"
             android:layout_width="25dp"
+            android:visibility="gone"
             android:layout_marginLeft="30dp"
             android:layout_height="25dp"/>
 

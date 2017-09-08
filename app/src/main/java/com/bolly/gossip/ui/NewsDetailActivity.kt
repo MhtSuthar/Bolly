@@ -3,6 +3,7 @@ package com.bolly.gossip.ui
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.webkit.WebChromeClient
@@ -36,11 +37,15 @@ class NewsDetailActivity : AppCompatActivity() {
         mWebView.isHorizontalScrollBarEnabled = false
         mWebView.clearHistory()
 
-        mWebView.webChromeClient = object : WebChromeClient() {
+            mWebView.webChromeClient = object : WebChromeClient() {
             override fun onProgressChanged(view: WebView, progress: Int) {
+                Log.e(TAG, "prog  "+progress)
                 mProgressBar.progress = progress
                 if (progress == 100)
                     mProgressBar.visibility = View.GONE
+                else{
+                    mProgressBar.visibility = View.VISIBLE
+                }
             }
         }
 
@@ -52,6 +57,7 @@ class NewsDetailActivity : AppCompatActivity() {
 
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
+                Log.e(TAG, "onPageFinished  ")
                 mProgressBarSide.visibility = View.GONE
             }
         }
