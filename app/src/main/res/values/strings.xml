@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bollywood Gossip</string>
+    <string name="no_internet">Please Check Your Internet Connection!</string>
+    <string name="entertainment_feed">http://hindi.news18.com/rss/khabar/entertainment/entertainment.xml</string>
+    <string name="film_feed">http://hindi.news18.com/rss/khabar/entertainment/film-review.xml</string>
+    <string name="bollywood_feed">http://hindi.news18.com/rss/khabar/entertainment/bollywood.xml</string>
+    <string name="hollywood_feed">http://hindi.news18.com/rss/khabar/entertainment/hollywood.xml</string>
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-8430026697006000/2824055773</string>
+    <string name="interstitial_full_screen">ca-app-pub-8430026697006000/4300788971</string>
+    <string name="rate_title">You like it!</string>
+    <string name="rate_message">If you like this app and share your experience than rate it</string>
+    <string name="rate_positive">Rate</string>
+    <string name="rate_remind_later">Later</string>
+    <string name="rate_never">Never</string>
+</resources>
